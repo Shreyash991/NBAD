@@ -1,17 +1,29 @@
 * {
     margin: 0;
-    padding: 0;
+ 
     box-sizing: border-box;
 }
 
 
 header{
-    background-color: #333;
+    background-color: #333333;
     display: flex;
     align-items: center; 
     justify-content: space-between;
     height: 100px;    
 }
+
+.home-image{
+    margin-top: 10px;
+    width: 50%;
+}
+.eventlist{
+    margin: 3%;
+}
+.event-category{
+  padding: 10px;
+}
+
 
 nav{
     background-color: #4a4a4a;
@@ -46,18 +58,16 @@ footer{
 .eventForm{
  
     max-width: 800px;
-    margin: 20px;
-    padding:20px;
+    margin: 5px;
+    padding: 5%;
 
-
-   
 }
 label{
    margin-right: 50px;
    display: inline-block;
-   width: 100px; 
+   width: 150px; 
 }
-input{
+input,select{
     display: inline-block;
     width: 400px; 
 }
@@ -79,13 +89,14 @@ footer a:hover {
     
 }
 
-h2{
+h3{
     display: flex;
-    justify-content: center;
+    padding-bottom: 2%;
+    margin-top: -5%;
 }
 
 .eventForm .submitButton{
-    margin-left: 155px;
+    margin-left: 30%;
 }
 
 .content {
@@ -97,4 +108,123 @@ h2{
     text-align: center;
     color: #f5f5f5;
     margin-top: 20px; /* Added margin to push content below the navbar */
+}
+.leadership{
+    padding: 15px;
+    width: 35%;
+}
+.eventDesc{
+    margin: 50px;
+}
+.event-container{
+    display: flex;
+    margin: 50px;
+}
+.eventDesc {
+    flex: 1; /* Allow eventDesc to take the remaining space */
+}
+
+.Title{
+    font-size: 120%;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 40px;
+    
+}
+
+span{
+    font-weight: bold;
+    
+}
+.event-info{
+    width: 500px;
+    word-wrap: break-word;
+}
+h1{
+    margin-bottom: 20px;
+}
+
+.event-action{
+   margin-top: 20px;
+   display: flex;
+   justify-content: flex-end;
+}
+i{
+    background-color: #3f3f077d; /* Primary button color */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .user-nav {
+        flex-direction: column;
+        width: auto;
+        margin-right: 0;
+    }
+
+    .user-nav a {
+        margin-bottom: 10px;
+    }
+
+    .home-image {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .event-container {
+        flex-direction: column;
+    }
+
+    .eventDesc, .leadership {
+        width: 100%;
+    }
+
+    .eventForm {
+        padding: 10px;
+    }
+
+    .eventForm .submitButton {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h3 {
+        margin-top: 20px; 
+    }
+}
+
+/* For screens smaller than 480px (optional for more specific control) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header .img {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .user-nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .user-nav a {
+        margin: 5px;
+    }
+
+    .event-action {
+        justify-content: center;
+    }
+
+    .event-info {
+        width: 100%;
+    }
+    h3 {
+        margin-top: 20px; 
+    }
 }

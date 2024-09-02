@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new connection</title>
+    <title>new event</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="UNCC logo" class="img" width="125" height="90">
+        <img src="logo.png" alt="UNCC logo" class="img" width="125" height="80">
         <div class="user-nav">
         <a href="" class="items">New Event</a>
             <button class="button">Login</button>
@@ -18,39 +18,36 @@
     </header>
     <nav>
         <a href="events.html">Events</a>
-        <a href="">Connections</a>
     </nav> 
-    <br><br>
-    <h2>Create a new connection</h2>
-    <br><br>
-    <form action="" class="eventForm">
+
+    <form action="#" class="eventForm">
+        <h3>Enter event details:</h3>
         <label for="category">Choose a category</label>
-        <select id="category" name="category">
+        <select id="category" name="category" >
         <option value="leadershipDevelopment">Leadership Development</option>
         <option value="softSkills">Soft Skills Development</option>
         <option value="technicalSkills">Technical Skills</option>
+        <option value="compliance">Compliance and Ethics Training</option>     
+        <option value="other">Other</option>
         </select>
         <br><br>
         <label for="Title">Title</label>
-        <input type="text"  id="Title">
+        <input type="text"  id="Title" required>
         <br><br>
         <label for="Description">Description</label>
-        <input type="text"  id="Description">
-        <br><br>
-        <label for="email">Email</label>
-        <input type="email" id="email">
+        <input type="text"  id="Description" required>
         <br><br>
         <label for="start">Start</label>
-        <input type="time" id="start">
+        <input type="time" id="start" required>
         <br><br>
         <label for="end">End</label>
-        <input type="time" id="end">
+        <input type="time" id="end" required>
         <br><br>
         <label for="when">When</label>
-        <input type="Date" id="when">
+        <input type="Date" id="when" required>
         <br><br>
         <label for="file">Upload file</label>
-        <input type="file" id="file"/>
+        <input type="file" id="file" required>
         <br><br>
 
 <div class="submitButton">
