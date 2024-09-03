@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Detail</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
          
     <header>
-        <img src="logo.png" alt="UNCC logo" class="img" width="125" height="80">
+        <img src="assets/logo.png" alt="Company logo" class="img" width="125" height="80">
         <div class="user-nav">
         <a href="newEvent.html" class="items">New Event</a>
             <button class="button">Login</button>
@@ -19,32 +19,36 @@
 
     </header>
     <nav>
+        <a href="index.html">Home</a>
         <a href="events.html">Events</a>
       
     </nav>  
     <div class="Title">Effective Communication for Leaders</div>
     <div class="event-container">
-    <img src="leadership.jpg " class="leadership" alt="leadership skills">
+    <img src="assets/leadership.jpg" class="leadership" alt="leadership skills">
     <div class="eventDesc">
     
         <div class="event-info">
-        <div><span>Host:</span> John Doe</div>
+        <div><span>Host:</span> John Mcavoy</div>
         <div><span>Date and Time:</span> Thursday, September 12, 2024, 10:00 AM - 12:00 PM</div>
         <div><span>Location:</span> Conference Room A, Building 2</div>
         <div><span>Details:</span> A workshop focused on developing strong communication skills for managers and team leaders. Participants will learn techniques for clear, assertive communication, active listening, and conflict resolution.</div>
         <div class="event-action">
-            <i class="fa-regular fa-pen-to-square"></i>
-            <i class="fa-solid fa-trash"></i>
+            <i class="fa-regular fa-pen-to-square" id="edit"></i>
+            <i class="fa-solid fa-trash" id="delete"></i>
+            
         </div>
         </div>
        
     </div>
 </div>
 
-    <footer>
-        <a href="">Copyright 	&copy; UNCC</a>
-    </footer>
-    
+<footer>
+    <a href="#" class="footer-site">Copyright 	&copy; WorkplaceWiz</a>
+    <a href="#" class="footer-site">Contact</a>
+    <a href="#" class="footer-site">About</a>
+    <a href="#" class="footer-link"><i class="fa-brands fa-twitter" style="color: #ac9453;"></i></a>
+</footer>
     
 </body>
 </html>
